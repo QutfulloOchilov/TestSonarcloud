@@ -20,12 +20,5 @@ namespace TestSonarcloud.Tests
 
             CollectionAssert.IsNotEmpty(result);
         }
-
-
-        [Test]
-        public void Test2()
-        {
-           Assert.Fail("Test build");
-        }
     }
 }
