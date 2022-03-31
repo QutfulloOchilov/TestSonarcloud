@@ -14,11 +14,29 @@ namespace TestSonarcloud.Tests
         }
 
         [Test]
-        public void Test1()
+        public void Test()
         {
             var result = _weatherForecastService.Get();
 
             CollectionAssert.IsNotEmpty(result);
         }
+
+        [Test]
+        public void Test1()
+        {
+            var result = _weatherForecastService.Get1();
+
+            CollectionAssert.IsNotEmpty(result);
+        }
+
+        [Test]
+        public void Test2()
+        {
+            var result = _weatherForecastService.Get2();
+
+            CollectionAssert.IsNotEmpty(result);
+        }
+
+
     }
 }
