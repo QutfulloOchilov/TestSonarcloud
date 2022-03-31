@@ -18,7 +18,7 @@ namespace TestSonarcloud.Tests
         {
             var result = _weatherForecastService.Get();
 
-            CollectionAssert.IsNotEmpty(result);
+            CollectionAssert.IsNotEmpty(result, "Collection should not be empty");
         }
 
         [Test]
@@ -26,7 +26,7 @@ namespace TestSonarcloud.Tests
         {
             var result = _weatherForecastService.Get1();
 
-            CollectionAssert.IsNotEmpty(result);
+            CollectionAssert.IsNotEmpty(result, "Collection should not be empty");
         }
 
         [Test]
@@ -34,7 +34,7 @@ namespace TestSonarcloud.Tests
         {
             var result = _weatherForecastService.Get2();
 
-            CollectionAssert.IsNotEmpty(result);
+            CollectionAssert.IsNotEmpty(result, "Collection should not be empty");
         }
 
 
